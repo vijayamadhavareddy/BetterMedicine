@@ -6,7 +6,7 @@
 <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Cassius | Stylish. Sexy. Flat.</title>
+    <title>Better Medicine</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Cassius is a stylish, modern, and flat design sold on the Themeforest Marketplace. It was created by David Parrelli. Enjoy!">
@@ -41,8 +41,8 @@
       <script src="js/bootstrap/respond.min.js"></script>
     <![endif]-->
 
-
 </head>
+
 
 <body class="home">
 
@@ -54,44 +54,57 @@
     </div>
 
     <div id="wrapper">
-
         <header>
             <div class="side-nav">
                 <ul id="gn-menu" class="gn-menu-main">
 
 
                     <!-- logo -->
-                    <li class="logo-wrapper"></li>
+                    <img src="./img/logo.png" />
+                    <li class="cta">
+                        <div style="margin-bottom:10px;">
+                            <div role="search" class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input id="searchQuery" type="text" style="height:100%;width:300px;margin-bottom:50px" class="form-control" placeholder="Search">
+
+                                </div>
+                                <select id="queryType" style="font-size:20px;height:100%;width:140px;margin-bottom:50px;" class="btn btn-primary">
+                                    <option style="" value="0">Drug</option>
+                                    <option style="height:100%;text-align:center;" value="1">Disease</option>
+
+                                </select>
+                                <button id="searchBtn" class="btn btn-default" style="height:100%px;margin-bottom:50px">Submit</button>
+
+                            </div>
+                        </div>
+                    </li>
 
                     <!-- top right: call to action -->
 
                 </ul>
             </div>
 
-            <div id="nav" class="col-lg-3 section-header hidden-xs">
-                <li class="logo-wrapper"><a class="logo home" href="index-multi.html">HealthCare</a></li>
-            </div>
+                
+                
         </header>
         <!-- Intro Section -->
-
         <section id="intro" class="section current side-nav">
             <div class="container">
                 <div class="row">
-                    <div class="navbar-form navbar-left flexContainer" role="search">
-                        <div class="form-group">
-                            <input id="searchQuery" type="text" style="height:60px;width:300px" class="form-control" placeholder="Search">
 
-                        </div>
-                        <button id="searchBtn" style="height: 60px;margin-bottom:5px;" class="btn btn-default">Submit</button>
-                    </div>
+                    <br />
+                    <br />
                     <div class="col-lg-12 fadeIn">
-                        <h1>We design and develop intuitive experiences</h1>
-                        <p>Carajillo brewed mazagran crema as so, affogato irish cortado frappuccino blue mountain. Siphon as, qui java cinnamon, coffee, café au lait, black trifecta mazagran est siphon.</p>
+                        <h1>Simplifying Medicines for you</h1>
+                        <p>Medicine is not only a science; it is also an art. It does not consist of compounding pills and plasters; it deals with the very processes of life, which must be understood before they may be guided.</p>
+                        <p>Just enter the Drug/Disease in the search bar and get the required solutions.</p>
                     </div>
 
                 </div>
             </div>
-        </section> <!-- end Intro Section -->
+        </section>
+        <!-- end Intro Section -->
+
         <div id="detailsDiv">
             <section id="details" class="content section dark">
                 <div class="container">
@@ -115,13 +128,29 @@
                                     <div class="accordion" id="accordion1">
                                         <div class="accordion-group">
                                             <div class="accordion-heading">
-                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsedrugs">
                                                     Drugs
                                                 </a>
                                             </div>
-                                            <div id="collapseOne" class="accordion-body collapse in">
+                                            <div id="collapsedrugs" class="accordion-body collapse in">
                                                 <div class="accordion-inner">
                                                     <ul id="diseaseToDrugs"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion" id="priceDiv">
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsehkp">
+                                                    Price List
+                                                </a>
+                                            </div>
+                                            <div id="collapsehkp" class="accordion-body collapse in">
+                                                <div class="accordion-inner" id="hkpDiv">
+
                                                 </div>
                                             </div>
                                         </div>
@@ -166,7 +195,7 @@
                                         <div class="accordion-group">
                                             <div class="accordion-heading">
                                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                                    Method
+                                                    Method of Administration
                                                 </a>
                                             </div>
                                             <div id="collapseFour" class="accordion-body collapse">
@@ -195,7 +224,12 @@
                                             </div>
                                             <div id="collapseSix" class="accordion-body collapse">
                                                 <div class="accordion-inner">
-                                                    <ul id="sideEffects"></ul>
+                                                    <ul id="sideEffects">
+                                                        <li>Dizziness</li>
+                                                        <li>Nausea</li>
+                                                        <li>Vomiting</li>
+                                                        <li>Sedation</li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -219,24 +253,12 @@
                                             </div>
                                             <div id="collapseda" class="accordion-body collapse">
                                                 <div class="accordion-inner">
-                                                    <ul id="medicationsToBeAvoided"></ul>
+                                                    <ul id="medicationsToBeAvoided">
+                                                        <li>Acetohexamide</li>
+                                                        <li>Chloropropamide</li>
+                                                        <li>Tolazamide</li>
+                                                    </ul>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" id="priceDiv">
-                                <div class="accordion" id="accordion">
-                                    <div class="accordion-group">
-                                        <div class="accordion-heading">
-                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsehkp">
-                                                Price List
-                                            </a>
-                                        </div>
-                                        <div id="collapsehkp" class="accordion-body collapse in">
-                                            <div class="accordion-inner" id="hkpDiv">
-
                                             </div>
                                         </div>
                                     </div>
@@ -259,49 +281,49 @@
 
                         <article class="focus-descriptions">
                             <div class="focus-description active">
-                                <h3>We transform ideas into products people love using.</h3>
+                                <h3>We kindle your curiosity.</h3>
                             </div> <!-- //focus-description -->
                             <div class="focus-description">
-                                <h3>We execute campaigns based on your target demographic</h3>
+                                <h3>We provide a meaningful solution for your symptoms.</h3>
                             </div> <!-- //focus-description -->
                             <div class="focus-description">
-                                <h3>Every project is mobile-optimized.</h3>
+                                <h3>Every disease is diagnosed.</h3>
                             </div> <!-- //focus-description -->
                             <div class="focus-description">
-                                <h3>Cutting-edge team focused on getting you results.</h3>
+                                <h3>The web app is focused on getting you results.</h3>
                             </div> <!-- //focus-description -->
                             <div class="focus-description">
-                                <h3>We create viral campaigns that get people talking!</h3>
+                                <h3>We create viral awareness that get people talking!</h3>
                             </div> <!-- //focus-description -->
                         </article>
                         <article class="focus-list">
                             <div class="focus-area-wrap">
                                 <div class="focus-area first highlight">
-                                    <div class="focus-icon"><span aria-hidden="true" class="linecon-bulb"></span></div>
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/1.png" /></span></div>
                                     <div class="focus-title">
                                         Ideation
                                     </div>
                                 </div> <!-- end area -->
                                 <div class="focus-area second">
-                                    <div class="focus-icon"><span aria-hidden="true" class="linecon-location"></span></div>
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/5.png" /></span></div>
                                     <div class="focus-title">
-                                        Targeted Campaigns
+                                        Targeted Drugs
                                     </div>
                                 </div> <!-- end area -->
                                 <div class="focus-area third">
-                                    <div class="focus-icon"><span aria-hidden="true" class="linecon-phone"></span></div>
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/3.png" /></span></div>
                                     <div class="focus-title">
-                                        Mobile-First Approach
+                                        Your emergency doctor
                                     </div>
                                 </div> <!-- end area -->
                                 <div class="focus-area fourth">
-                                    <div class="focus-icon"><span aria-hidden="true" class="linecon-lab"></span></div>
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/4.png" /></span></div>
                                     <div class="focus-title">
                                         Creative Execution
                                     </div>
                                 </div> <!-- end area -->
                                 <div class="focus-area fifth">
-                                    <div class="focus-icon"><span aria-hidden="true" class="linecon-bubble"></span></div>
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/6.png" /></span></div>
                                     <div class="focus-title">
                                         Virality
                                     </div>
@@ -324,32 +346,32 @@
             </ol>
 
             <div class="carousel-inner">
-                <div class="item active" style="background-image: url('img/bg-home8.jpg');">
+                <div class="item active" style="background-image: url('img/bg-home123.jpg');">
 
                     <!-- Featured Copy -->
                     <div class="carousel-caption">
-                        <h2>Keep your loved ones in the loop</h2>
-                        <p>Share your special moments with those that matter most.</p>
+                        <h2 style="color:black">Keep your loved ones in the loop</h2>
+                        <p style="color:black">Share your special moments with those that matter most.</p>
                     </div>
 
                 </div>
 
-                <div class="item" style="background-image: url('img/bg-home23.jpg');">
+                <div class="item" style="background-image: url('img/bg-home1234.jpg');">
 
                     <!-- Featured Copy -->
                     <div class="carousel-caption">
-                        <h2>Keep your loved ones in the loop</h2>
-                        <p>Share your special moments with those that matter most.</p>
+                        <h2 style="color:red">Keep your loved ones in the loop</h2>
+                        <p style="color:red">Share your special moments with those that matter most.</p>
                     </div>
 
                 </div>
 
-                <div class="item" style="background-image: url('img/bg-home25.jpg');">
+                <div class="item" style="background-image: url('img/bg-home12345.jpg');">
 
                     <!-- Featured Copy -->
                     <div class="carousel-caption">
-                        <h2>Keep your loved ones in the loop</h2>
-                        <p>Share your special moments with those that matter most.</p>
+                        <h2 style="color:blue">Keep your loved ones in the loop</h2>
+                        <p style="color:blue">Share your special moments with those that matter most.</p>
                     </div>
 
                 </div>
@@ -359,18 +381,23 @@
         <!-- Footer -->
         <footer>
             <div class="row">
-                <div class="col-lg-4 copyright">
-                    <p>Created by <a href="http://www.davidparrelli.com/" target="_blank">David Parrelli</a></p>
+                <div class="" style="text-align:center">
+                    <p>Created by <a href="" target="_blank">Vijay and CO.</p>
                 </div>
-                <div class="col-lg-8 social pull-right text-right">
-                    <a href="#"><span aria-hidden="true" class="icon-facebook"></span></a>
-                    <a href="#"><span aria-hidden="true" class="icon-twitter"></span></a>
-                    <a href="#"><span aria-hidden="true" class="icon-dribbble"></span></a>
-                    <a href="#"><span aria-hidden="true" class="icon-youtube-play"></span></a>
-                    <a href="#"><span aria-hidden="true" class="icon-google-plus"></span></a>
-                </div>
+                <!--<div class="col-lg-8 social pull-right text-right">
+                      <a href="#"><span aria-hidden="true" class="icon-facebook"></span></a>
+                      <a href="#"><span aria-hidden="true" class="icon-twitter"></span></a>
+                      <a href="#"><span aria-hidden="true" class="icon-dribbble"></span></a>
+                      <a href="#"><span aria-hidden="true" class="icon-youtube-play"></span></a>
+                      <a href="#"><span aria-hidden="true" class="icon-google-plus"></span></a>
+
+                  </div>
+                </footer> <!-- end Footer -->
+
+
             </div>
-        </footer> <!-- end Footer -->
+        </footer>
+        <!-- end Footer -->
 
 
     </div> <!-- end Wrapper -->
@@ -388,6 +415,7 @@
         //$(window).load(function() { $(".preloader").fadeOut("fast"); })
         // ]]>
         var uri = "http://ioinfo.distilbio.com/hackathon/api/1.x/query?";
+        var healthCartUri = "http://www.healthkartplus.com";
         function prepareDrugQueryURL(drugname) {
             var queryComponent = "sql=select * from Drug where name='" + drugname + "';";
             return uri + queryComponent;
@@ -483,10 +511,12 @@
         }
 
         function drugSideEffectsQueryCallback(json) {
+            alert('hi se');
             if (json.status == "ok" && json.result.items != null) {
                 $.each(json.result.items, function (i, item) {
                     if (i > 0) {
-                        $("#sideEffects").append("<li><span>" + item['@attrs'][0].name.value + "</span></li>");
+                        alert('hi se' + i);
+                        $("#sideEffects").append("<li><span>" + item['@attrs'].name.value + "</span></li>");
                     }
                 });
             }
@@ -497,7 +527,7 @@
             var obj = $.parseJSON(data);
             $.each(obj, function (i, item) {
                 $("#hkpDiv").append("<div class='row'>");
-                $("#hkpDiv").append("<div class='col-md-4'>" + item.name + "</div>");
+                $("#hkpDiv").append("<div class='col-md-4'><a target='_blank' href=" + healthCartUri + item.ref + ">" + item.name + "</a></div>");
                 $("#hkpDiv").append("<div class='col-md-4'>" + item.quantity + "</div>");
                 $("#hkpDiv").append("<div class='col-md-4'>" + item.price + "</div>");
                 $("#hkpDiv").append("</div>");
@@ -509,7 +539,7 @@
             if (json.status == "ok" && json.result.items != null) {
                 $.each(json.result.items, function (i, item) {
                     if (item["@type"] == "d1") {
-                        $("#medicationsToBeAvoided").append("<li><span>" + item['@attrs'][0].name.value + "</span></li>")
+                        $("#medicationsToBeAvoided").append("<li><span>" + item['@attrs'].name.value + "</span></li>")
                     }
                 });
             }
@@ -520,7 +550,7 @@
             if (json.status == "ok" && json.result.items != null) {
                 $.each(json.result.items, function (i, item) {
                     if (item["@type"] == "di") {
-                        $("#diseasesTreated").append("<li><span>" + item['@attrs'][0].name.value + "</span></li>")
+                        $("#diseasesTreated").append("<li><span>" + item['@attrs'].name.value + "</span></li>")
                     }
                 });
             }
@@ -530,12 +560,12 @@
             if (json.status == "ok") {
                 $("#name").text('');
                 if (json.result.items[0]['@attrs'].name != null) {
-                    $("#name").text(json.result.items[0]['@attrs'][0].name.value);
+                    $("#name").text(json.result.items[0]['@attrs'].name.value);
                 }
                 $("#description").text('');
                 if (json.result.items[0]['@attrs'].description != null) {
                     $("#description").append("<ul>");
-                    $.each($.parseJSON(json.result.items[0]['@attrs'][0].description), function (i, item) {
+                    $.each(json.result.items[0]['@attrs'].description, function (i, item) {
                         $("#description").append("<li>" + item.value + "</li>");
                     });
                     $("#description").append("</ul>");
@@ -549,9 +579,9 @@
             if (json.status == "ok") {
                 $("#diseaseToDrugs").html('');
                 if (json.result.items != null) {
-                    $.each($.parseJSON(json.result.items), function (i, item) {
+                    $.each(json.result.items, function (i, item) {
                         if (item["@type"] == "d") {
-                            $("#diseaseToDrugs").append("<li id='drugName'>" + item["@attrs"][0].name.value + "</li>");
+                            $("#diseaseToDrugs").append("<li id='drugName'>" + item["@attrs"].name.value + "</li>");
                         }
                     });
                 }
@@ -574,16 +604,22 @@
         }
         $(document).ready(function () {
             $("#detailsDiv").hide();
-            $("#brandNames").on("click", "#drugName", function (event) {
-                queryData(prepareDrugQueryURL(event.target.innerText));
-            });
             $("#searchBtn").click(function (event) {
-                queryData(prepareDrugQueryURL($("#searchQuery").val()), drugSearchCallBack);
+                if ($("#queryType option:selected").val() == 0) {
+                    queryData(prepareDrugQueryURL($("#searchQuery").val()), drugSearchCallBack);
+                    $("#accordion1").hide();
+                    $("#accordion").show();
+                    $("#priceDiv").show();
+                } else {
+                    queryData(prepareDiseasesQuery($("#searchQuery").val()), diseaseQuearyCallback);
+                    $("#accordion1").show();
+                    $("#accordion").hide();
+                    $("#priceDiv").hide();
+                }
                 $("#detailsDiv").show();
                 $("#about").hide();
                 $("#featured").hide();
             });
-
         });
 
     </script>

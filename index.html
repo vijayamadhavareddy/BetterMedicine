@@ -159,7 +159,7 @@
                                         <div class="accordion-group">
                                             <div class="accordion-heading">
                                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                    Food Interation
+                                                    Food Interaction
                                                 </a>
                                             </div>
                                             <div id="collapseOne" class="accordion-body collapse in">
@@ -527,7 +527,7 @@
             var obj = $.parseJSON(data);
             $.each(obj, function (i, item) {
                 $("#hkpDiv").append("<div class='row'>");
-                $("#hkpDiv").append("<div class='col-md-4'><a target='_blank' href=" + healthCartUri + item.ref + ">" + item.name + "</a></div>");
+                $("#hkpDiv").append("<div class='col-md-4'><a style='color:yellow;' target='_blank' href=" + healthCartUri + item.ref + ">" + item.name + "</a></div>");
                 $("#hkpDiv").append("<div class='col-md-4'>" + item.quantity + "</div>");
                 $("#hkpDiv").append("<div class='col-md-4'>" + item.price + "</div>");
                 $("#hkpDiv").append("</div>");

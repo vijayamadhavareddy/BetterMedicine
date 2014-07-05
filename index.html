@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Cassius | Stylish. Sexy. Flat.</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Cassius is a stylish, modern, and flat design sold on the Themeforest Marketplace. It was created by David Parrelli. Enjoy!">
+    <meta name="author" content="">
+
+
+    <!-- LESS styles -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="css/less/custom.less" />  -->
+    <!-- Main styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.html">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.html">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.html">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.html">
+    <link rel="shortcut icon" href="ico/favicon.html">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/bootstrap/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body class="home">
+
+    <div class="preloader">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+        <div class="dot dot4"></div>
+    </div>
+
+    <div id="wrapper">
+        <header>
+            <div class="side-nav">
+                <ul id="gn-menu" class="gn-menu-main">
+
+
+                    <!-- logo -->
+                    <li class="logo-wrapper"></li>
+
+                    <!-- top right: call to action -->
+
+                </ul>
+            </div>
+
+            <div id="nav" class="col-lg-3 section-header hidden-xs">
+                <li class="logo-wrapper"><a class="logo home" href="index-multi.html">HealthCare</a></li>
+                <div style="margin-left:300px;position:fixed;float:clear">
+                    <div role="search" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input id="searchQuery" type="text" style="height:60px;width:300px;" class="form-control" placeholder="Search">
+
+                        </div>
+                        <select id="queryType" style="font-size:20px;height:60px;width:140px;margin-bottom:8px;" class="btn btn-primary">
+                            <option style="" value="0">Drug</option>
+                            <option style="height:60px;text-align:center;" value="1">Disease</option>
+
+                        </select>
+                        <button id="searchBtn" class="btn btn-default" style="height:60px;margin-bottom:5px">Submit</button>
+
+                    </div>
+                </div>
+        </header>
+        <!-- Intro Section -->
+        <section id="intro" class="section current side-nav">
+            <div class="container">
+                <div class="row">
+
+                    <br />
+                    <br />
+                    <div class="col-lg-12 fadeIn">
+                        <h1>Simplifying Medicines for you</h1>
+                        <p>Medicine is not only a science; it is also an art. It does not consist of compounding pills and plasters; it deals with the very processes of life, which must be understood before they may be guided.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end Intro Section -->
+
+        <div id="detailsDiv">
+            <section id="details" class="content section dark">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="page-header">
+                                <!--<h3 class="title text-left">Our Mission</h3>-->
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2 id="name"></h2>
+                                    <p id="description"></p>
+                                    <hr />
+                                    <p id="diseaseDesription"></p>
+                                    <!--<p><a class="btn cta scrollAnchor" href="#team">Meet our team</a></p>-->
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="accordion" id="accordion1">
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsedrugs">
+                                                    Drugs
+                                                </a>
+                                            </div>
+                                            <div id="collapsedrugs" class="accordion-body collapse in">
+                                                <div class="accordion-inner">
+                                                    <ul id="diseaseToDrugs"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordion">
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                    Food Interation
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-body collapse in">
+                                                <div class="accordion-inner">
+                                                    <ul id="foodInteration"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                    Absorption
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <p id="absorption"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                    Dosage
+                                                </a>
+                                            </div>
+                                            <div id="collapseThree" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <ul id="definedDailyDose"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                    Method of Administration
+                                                </a>
+                                            </div>
+                                            <div id="collapseFour" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <ul id="rootOfAdministration"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                    Other Brands
+                                                </a>
+                                            </div>
+                                            <div id="collapseFive" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <ul id="brandNames"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                                    Side Effects
+                                                </a>
+                                            </div>
+                                            <div id="collapseSix" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <ul id="sideEffects">
+                                                        <li>Dizziness</li>
+                                                        <li>Nausea</li>
+                                                        <li>Vomiting</li>
+                                                        <li>Sedation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsedt">
+                                                    Diseases Treated
+                                                </a>
+                                            </div>
+                                            <div id="collapsedt" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <ul id="diseasesTreated"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseda">
+                                                    Medications to be avoided
+                                                </a>
+                                            </div>
+                                            <div id="collapseda" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <ul id="medicationsToBeAvoided">
+                                                        <li>Acetohexamide</li>
+                                                        <li>Chloropropamide</li>
+                                                        <li>Tolazamide</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="priceDiv">
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-group">
+                                        <div class="accordion-heading">
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsehkp">
+                                                Price List
+                                            </a>
+                                        </div>
+                                        <div id="collapsehkp" class="accordion-body collapse in">
+                                            <div class="accordion-inner" id="hkpDiv">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- About Section -->
+        <section id="about" class="section dark">
+            <div class="">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                            <h2>What We Do</h2>
+                        </div>
+
+                        <article class="focus-descriptions">
+                            <div class="focus-description active">
+                                <h3>We kindle your curiosity.</h3>
+                            </div> <!-- //focus-description -->
+                            <div class="focus-description">
+                                <h3>We provide a meaningful solution for your symptoms.</h3>
+                            </div> <!-- //focus-description -->
+                            <div class="focus-description">
+                                <h3>Every disease is diagnosed.</h3>
+                            </div> <!-- //focus-description -->
+                            <div class="focus-description">
+                                <h3>The web app is focused on getting you results.</h3>
+                            </div> <!-- //focus-description -->
+                            <div class="focus-description">
+                                <h3>We create viral awareness that get people talking!</h3>
+                            </div> <!-- //focus-description -->
+                        </article>
+                        <article class="focus-list">
+                            <div class="focus-area-wrap">
+                                <div class="focus-area first highlight">
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/1.png" /></span></div>
+                                    <div class="focus-title">
+                                        Ideation
+                                    </div>
+                                </div> <!-- end area -->
+                                <div class="focus-area second">
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/5.png" /></span></div>
+                                    <div class="focus-title">
+                                        Targeted Drugs
+                                    </div>
+                                </div> <!-- end area -->
+                                <div class="focus-area third">
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/3.png" /></span></div>
+                                    <div class="focus-title">
+                                        Your emergency doctor
+                                    </div>
+                                </div> <!-- end area -->
+                                <div class="focus-area fourth">
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/4.png" /></span></div>
+                                    <div class="focus-title">
+                                        Creative Execution
+                                    </div>
+                                </div> <!-- end area -->
+                                <div class="focus-area fifth">
+                                    <div class="focus-icon"><span aria-hidden="true" class=""><img src="./img/6.png" /></span></div>
+                                    <div class="focus-title">
+                                        Virality
+                                    </div>
+                                </div> <!-- end area -->
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+            </div>
+        </section> <!-- end About Section -->
+        <!-- Featured items -->
+        <section id="featured" class="section intro carousel slide">
+
+            <ol class="carousel-indicators">
+                <li data-target="#featured" data-slide-to="0" class="active"></li>
+                <li data-target="#featured" data-slide-to="1"></li>
+                <li data-target="#featured" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url('img/bg-home123.jpg');">
+
+                    <!-- Featured Copy -->
+                    <div class="carousel-caption">
+                        <h2 style="color:black">Keep your loved ones in the loop</h2>
+                        <p style="color:black">Share your special moments with those that matter most.</p>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url('img/bg-home1234.jpg');">
+
+                    <!-- Featured Copy -->
+                    <div class="carousel-caption">
+                        <h2 style="color:red">Keep your loved ones in the loop</h2>
+                        <p style="color:red">Share your special moments with those that matter most.</p>
+                    </div>
+
+                </div>
+
+                <div class="item" style="background-image: url('img/bg-home12345.jpg');">
+
+                    <!-- Featured Copy -->
+                    <div class="carousel-caption">
+                        <h2 style="color:blue">Keep your loved ones in the loop</h2>
+                        <p style="color:blue">Share your special moments with those that matter most.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section> <!-- end Featured items -->
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="" style="text-align:center">
+                    <p>Created by <a href="" target="_blank">Vijay and CO.</p>
+                </div>
+                <!--<div class="col-lg-8 social pull-right text-right">
+              <a href="#"><span aria-hidden="true" class="icon-facebook"></span></a>
+              <a href="#"><span aria-hidden="true" class="icon-twitter"></span></a>
+              <a href="#"><span aria-hidden="true" class="icon-dribbble"></span></a>
+              <a href="#"><span aria-hidden="true" class="icon-youtube-play"></span></a>
+              <a href="#"><span aria-hidden="true" class="icon-google-plus"></span></a>
+
+          </div>
+        </footer> <!-- end Footer -->
+
+
+            </div>
+        </footer> 
+        <!-- end Footer -->
+
+
+    </div> <!-- end Wrapper -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/modernizr.custom.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 9) | (!IE)]><!-->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+
+        // <![CDATA[
+        //$(window).load(function() { $(".preloader").fadeOut("fast"); })
+        // ]]>
+        var uri = "http://ioinfo.distilbio.com/hackathon/api/1.x/query?";
+        function prepareDrugQueryURL(drugname) {
+            var queryComponent = "sql=select * from Drug where name='" + drugname + "';";
+            return uri + queryComponent;
+        }
+
+        function prepareSideEffetsQuery(drugname) {
+            var queryComponent = "sql=select s.name from Drug as d join SideEffect as s on d.hasSideeffect = s.id where d.name='" + drugname + "';"
+            return uri + queryComponent;
+        }
+
+        function prepareDiseaseToDrugsQueryURL(diseaseName) {
+            var queryComponent = "sql=select d.name from Drug as d join DrugPotentialTreatmentForDisease as dtd on d.potentialTreatmentFor=dtd.id join Disease as di on di.id=dtd.hasObject where di.name='" + diseaseName + "';";
+            return uri + queryComponent;
+        }
+
+        function prepareDiseasesTreatedQuery(drugName) {
+            var queryComponent = "sql=select d.name from Disease as di join DiseaseHasPotentialDrugDrug as dpd on di.hasPotentialDrug=dpd.id join Drug as d on dpd.hasObject=d.id where d.name='" + drugName + "';";
+            return uri + queryComponent;
+        };
+
+        function preparedMedicationToAvoidQuery(drugName) {
+            var queryComponent = "sql=select d1.name from Drug as d1 join DrugInteractsWithDrug as did on d1.interactsWith=did.id join Drug as d2 on did.hasObject=d2.id where d2.name='" + drugName + "';";
+            return uri + queryComponent;
+        };
+
+        function prepareDiseasesQuery(diseaseName) {
+            var queryComponent = "sql=select * from Disease where name='" + diseaseName + "';";
+            return uri + queryComponent;
+        }
+
+        function drugSearchCallBack(json) {
+            $("#name").text('');
+            if (json.result.items[0]['@attrs'].name != null) {
+                $("#name").text(json.result.items[0]['@attrs'].name.value);
+            }
+            $("#description").text('');
+            if (json.result.items[0]['@attrs'].description != null) {
+                $("#description").text(json.result.items[0]['@attrs'].description.value);
+            }
+            $("#diseaseDesription").text('');
+            if (json.result.items[0]['@attrs'].relatedDiseaseDescription != null) {
+                $("#diseaseDesription").text(json.result.items[0]['@attrs'].relatedDiseaseDescription.value);
+            }
+            $("#foodInteration").html('');
+            if (json.result.items[0]['@attrs'].foodInteraction != null) {
+                $.each(json.result.items[0]['@attrs'].foodInteraction, function (i, item) {
+                    $("#foodInteration").append("<li>" + item.value + "</li>");
+                });
+            }
+            $("#absorption").text('');
+            if (json.result.items[0]['@attrs'].absorption != null) {
+                $("#absorption").text(json.result.items[0]['@attrs'].absorption.value);
+            }
+            $("#rootOfAdministration").html('');
+            if (json.result.items[0]['@attrs'].routeOfAdministration != null) {
+                if ($.isArray(json.result.items[0]['@attrs'].routeOfAdministration)) {
+                    $.each(json.result.items[0]['@attrs'].routeOfAdministration, function (i, item) {
+                        $("#rootOfAdministration").append("<li><span id=drugName>" + item.value + "</span></li>");
+                    });
+                } else {
+                    $("#rootOfAdministration").append("<li><span>" + json.result.items[0]['@attrs'].routeOfAdministration.value + "</span></li>");
+                }
+            }
+            $("#definedDailyDose").html('');
+            if (json.result.items[0]['@attrs'].definedDailyDose != null) {
+                if ($.isArray(json.result.items[0]['@attrs'].definedDailyDose)) {
+                    $.each(json.result.items[0]['@attrs'].definedDailyDose, function (i, item) {
+                        $("#definedDailyDose").append("<li><span>" + item.value + "</span></li>");
+                    });
+                } else {
+                    $("#definedDailyDose").append("<li><span>" + json.result.items[0]['@attrs'].definedDailyDose.value + "</span></li>");
+                }
+            }
+            $("#brandNames").html('');
+            if (json.result.items[0]['@attrs'].brandName != null) {
+                $.each(json.result.items[0]['@attrs'].brandName, function (i, item) {
+                    $("#brandNames").append("<li><span id=drugName>" + item.value + "</span></li>");
+                });
+            }
+            queryData(prepareSideEffetsQuery($("#searchQuery").val()), drugSideEffectsQueryCallback);
+            queryData(prepareDiseasesTreatedQuery($("#searchQuery").val()), drugDiseasesTreatedQueryCallback);
+            queryData(preparedMedicationToAvoidQuery($("#searchQuery").val()), drugMedicationsTobeAvoidedQueryCallback);
+            $.ajax({
+                type: 'POST',
+                url: 'priceparser.php',
+                data: { drugName: $("#searchQuery").val() },
+                success: getPriceInfo,
+                error: function (e) {
+                    console.log(e.message);
+                }
+            });
+            $.scrollTo("#detailsDiv");
+        }
+
+        function drugSideEffectsQueryCallback(json) {
+            alert('hi se');
+            if (json.status == "ok" && json.result.items != null) {
+                $.each(json.result.items, function (i, item) {
+                    if (i > 0) {
+                        alert('hi se'+i);
+                        $("#sideEffects").append("<li><span>" + item['@attrs'].name.value + "</span></li>");
+                    }
+                });
+            }
+        }
+
+        function getPriceInfo(data) {
+            $("#hkpDiv").html('');
+            var obj = $.parseJSON(data);
+            $.each(obj, function (i, item) {
+                $("#hkpDiv").append("<div class='row'>");
+                $("#hkpDiv").append("<div class='col-md-4'>" + item.name + "</div>");
+                $("#hkpDiv").append("<div class='col-md-4'>" + item.quantity + "</div>");
+                $("#hkpDiv").append("<div class='col-md-4'>" + item.price + "</div>");
+                $("#hkpDiv").append("</div>");
+            });
+        }
+
+        function drugMedicationsTobeAvoidedQueryCallback(json) {
+            $("#medicationsToBeAvoided").html('');
+            if (json.status == "ok" && json.result.items != null) {
+                $.each(json.result.items, function (i, item) {
+                    if (item["@type"] == "d1") {
+                        $("#medicationsToBeAvoided").append("<li><span>" + item['@attrs'].name.value + "</span></li>")
+                    }
+                });
+            }
+        }
+
+        function drugDiseasesTreatedQueryCallback(json) {
+            $("#diseasesTreated").html('');
+            if (json.status == "ok" && json.result.items != null) {
+                $.each(json.result.items, function (i, item) {
+                    if (item["@type"] == "di") {
+                        $("#diseasesTreated").append("<li><span>" + item['@attrs'].name.value + "</span></li>")
+                    }
+                });
+            }
+        }
+
+        function diseaseQuearyCallback(json) {
+            if (json.status == "ok") {
+                $("#name").text('');
+                if (json.result.items[0]['@attrs'].name != null) {
+                    $("#name").text(json.result.items[0]['@attrs'].name.value);
+                }
+                $("#description").text('');
+                if (json.result.items[0]['@attrs'].description != null) {
+                    $("#description").append("<ul>");
+                    $.each(json.result.items[0]['@attrs'].description, function (i, item) {
+                        $("#description").append("<li>" + item.value + "</li>");
+                    });
+                    $("#description").append("</ul>");
+                }
+                queryData(prepareDiseaseToDrugsQueryURL($("#searchQuery").val()), diseasesToDrugsQueryCallback);
+                $.scrollTo("#detailsDiv");
+            }
+        }
+
+        function diseasesToDrugsQueryCallback(json) {
+            if (json.status == "ok") {
+                $("#diseaseToDrugs").html('');
+                if (json.result.items != null) {
+                    $.each(json.result.items, function (i, item) {
+                        if (item["@type"] == "d") {
+                            $("#diseaseToDrugs").append("<li id='drugName'>" + item["@attrs"].name.value + "</li>");
+                        }
+                    });
+                }
+            }
+        };
+
+        function queryData(queryurl, callback) {
+            $.ajax({
+                type: 'GET',
+                url: queryurl,
+                async: false,
+                jsonpCallback: 'jsonCallback',
+                contentType: "application/json",
+                dataType: 'jsonp',
+                success: callback,
+                error: function (e) {
+                    console.log(e.message);
+                }
+            });
+        }
+        $(document).ready(function () {
+            $("#detailsDiv").hide();
+            $("#searchBtn").click(function (event) {
+                if ($("#queryType option:selected").val() == 0) {
+                    queryData(prepareDrugQueryURL($("#searchQuery").val()), drugSearchCallBack);
+                    $("#accordion1").hide();
+                    $("#accordion").show();
+                    $("#priceDiv").show();
+                } else {
+                    queryData(prepareDiseasesQuery($("#searchQuery").val()), diseaseQuearyCallback);
+                    $("#accordion1").show();
+                    $("#accordion").hide();
+                    $("#priceDiv").hide();
+                }
+                $("#detailsDiv").show();
+                $("#about").hide();
+                $("#featured").hide();
+            });
+        });
+
+    </script>
+    <!--<![endif]-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.scrollTo-min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.collagePlus.min.js"></script>
+    <script src="js/jquery.removeWhitespace.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.caroufredsel.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.gnmenu.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    <!-- LESS SCRIPT (RECOMMENDED IF YOU KNOW LESS CSS) -->
+    <!-- <script src="js/less-1.3.3.min.js"></script> -->
+    <!-- PRELOADER -->
+
+    <script type="text/javascript">
+
+    </script>
+
+
+</body>
+</html>
